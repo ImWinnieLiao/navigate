@@ -79,19 +79,18 @@ class Page2 extends StatelessWidget {
     );
 
     final widget = Container(
+      margin: EdgeInsets.symmetric(vertical: 10,),
       child: Column(
         children:  [
           textWrapper,
           Expanded(child: listView,),
+          Container(
+            child: btn,
+            alignment: Alignment.bottomCenter,
+            padding: EdgeInsets.all(30),
+          ),
         ],
       ),
-      margin: EdgeInsets.symmetric(vertical: 10,),
-    );
-
-    final widget = Container(
-      child: btn,
-      alignment: Alignment.bottomCenter,
-      padding: EdgeInsets.all(30),
     );
 
     final page = Scaffold(
